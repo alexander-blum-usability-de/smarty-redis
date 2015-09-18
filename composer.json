@@ -1,0 +1,25 @@
+{
+    "name": "autocom/smarty-redis",
+    "require": {
+        "predis/predis": "^1.0",
+        "smarty/smarty": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8",
+        "m6web/redis-mock": "^2.3"
+    },
+    "authors": [
+        {
+            "name": "Martin Häger",
+            "email": "martin.hager@autocom.se"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Autocom\\": "src/Autocom"
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit --bootstrap tests/bootstrap.php tests/"
+    }
+}
